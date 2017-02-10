@@ -10,12 +10,23 @@
 
 @interface ViewController ()
 
+
+@property(nonatomic,strong)NSString * name;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    UILabel * label = [[UILabel alloc]init];
+    [label setFrame:CGRectMake(100, 100, 200, 40)];
+    [label setText:@"zheshiyigelabel"];
+    
+    [self.view addSubview:label];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
